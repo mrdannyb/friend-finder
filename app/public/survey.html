@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <title>Fantasy Friend Finder</title>
+    <title>Fantasy Familiar Finder</title>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
   </head>
   <body>
@@ -11,8 +11,236 @@
 
     </div>
 
+    <div class="container">
+      <form id="questionaire" action="index.html" method="post">
+        <div class="form-group bg-faded">
+          <label for="user-name">What's your name traveler?</label>
+          <input type="text" name="user-name" placeholder="What shall I call you?" id="userName">
+        </div>
+        <div class="form-group bg-faded">
+          <p>Would you rather be loved or feared</p>
+          <div class="form-check form-check-inline">
+            <label class="form-check-label">
+              <input type="radio" class="form-check-input" name="quest1" id="5q1" value="5">Loved
+            </label>
+            <label class="form-check-label">
+              <input type="radio" class="form-check-input" name="quest1" id="4q1" value="4">
+            </label>
+            <label class="form-check-label">
+              <input type="radio" class="form-check-input" name="quest1" id="3q1" value="3">Both
+            </label>
+            <label class="form-check-label">
+              <input type="radio" class="form-check-input" name="quest1" id="2q1" value="2">
+            </label>
+            <label class="form-check-label">
+              <input type="radio" class="form-check-input" name="quest1" id="1q1" value="1">Feared
+            </label>
+          </div>
+        </div>
+        <div class="form-group bg-faded">
+          <p>You think good open communication is the most important factor in a partnership</p>
+          <div class="form-check form-check-inline">
+            <label class="form-check-label">
+              <input type="radio" class="form-check-input" name="quest2" value="5">Most
+            </label>
+            <label class="form-check-label">
+              <input type="radio" class="form-check-input" name="quest2" value="4">
+            </label>
+            <label class="form-check-label">
+              <input type="radio" class="form-check-input" name="quest2" value="3">equal
+            </label>
+            <label class="form-check-label">
+              <input type="radio" class="form-check-input" name="quest2" value="2">
+            </label>
+            <label class="form-check-label">
+              <input type="radio" class="form-check-input" name="quest2" value="1">least
+            </label>
+          </div>
+        </div>
+        <div class="form-group bg-faded">
+          <p>You think most humans should leave the planet</p>
+          <div class="form-check form-check-inline">
+            <label class="form-check-label">
+              <input type="radio" class="form-check-input" name="quest3" value="5">Yes!
+            </label>
+            <label class="form-check-label">
+              <input type="radio" class="form-check-input" name="quest3" value="4">
+            </label>
+            <label class="form-check-label">
+              <input type="radio" class="form-check-input" name="quest3" value="3">Well...
+            </label>
+            <label class="form-check-label">
+              <input type="radio" class="form-check-input" name="quest3" value="2">
+            </label>
+            <label class="form-check-label">
+              <input type="radio" class="form-check-input" name="quest3" value="1">No!
+            </label>
+          </div>
+        </div>
+        <div class="form-group bg-faded">
+          <p>Your idea of a good time includes Murder</p>
+          <div class="form-check form-check-inline">
+            <label class="form-check-label">
+              <input type="radio" class="form-check-input" name="quest4" value="5">Murder
+            </label>
+            <label class="form-check-label">
+              <input type="radio" class="form-check-input" name="quest4" value="4">
+            </label>
+            <label class="form-check-label">
+              <input type="radio" class="form-check-input" name="quest4" value="3">sometimes
+            </label>
+            <label class="form-check-label">
+              <input type="radio" class="form-check-input" name="quest4" value="2">
+            </label>
+            <label class="form-check-label">
+              <input type="radio" class="form-check-input" name="quest4" value="1">Nope
+            </label>
+          </div>
+        </div>
+        <div class="form-group bg-faded">
+          <p>If you can't figure out a problem, first you get a bigger hammer</p>
+          <div class="form-check form-check-inline">
+            <label class="form-check-label">
+              <input type="radio" class="form-check-input" name="quest5" value="5">Hit it
+            </label>
+            <label class="form-check-label">
+              <input type="radio" class="form-check-input" name="quest5" value="4">
+            </label>
+            <label class="form-check-label">
+              <input type="radio" class="form-check-input" name="quest5" value="3">Both
+            </label>
+            <label class="form-check-label">
+              <input type="radio" class="form-check-input" name="quest5" value="2">
+            </label>
+            <label class="form-check-label">
+              <input type="radio" class="form-check-input" name="quest5" value="1">Think it
+            </label>
+          </div>
+        </div>
+        <div class="form-group bg-faded">
+          <p>Your life would be fine without music</p>
+          <div class="form-check form-check-inline">
+            <label class="form-check-label">
+              <input type="radio" class="form-check-input" name="quest6" value="5">Quiet
+            </label>
+            <label class="form-check-label">
+              <input type="radio" class="form-check-input" name="quest6" value="4">
+            </label>
+            <label class="form-check-label">
+              <input type="radio" class="form-check-input" name="quest6" value="3">Both
+            </label>
+            <label class="form-check-label">
+              <input type="radio" class="form-check-input" name="quest6" value="2">
+            </label>
+            <label class="form-check-label">
+              <input type="radio" class="form-check-input" name="quest6" value="1">Music
+            </label>
+          </div>
+        </div>
+        <div class="form-group bg-faded">
+          <p>You can imagine a sustainable life on a space station</p>
+          <div class="form-check form-check-inline">
+            <label class="form-check-label">
+              <input type="radio" class="form-check-input" name="quest7" value="5">Space
+            </label>
+            <label class="form-check-label">
+              <input type="radio" class="form-check-input" name="quest7" value="4">
+            </label>
+            <label class="form-check-label">
+              <input type="radio" class="form-check-input" name="quest7" value="3">Both
+            </label>
+            <label class="form-check-label">
+              <input type="radio" class="form-check-input" name="quest7" value="2">
+            </label>
+            <label class="form-check-label">
+              <input type="radio" class="form-check-input" name="quest7" value="1">Nature
+            </label>
+          </div>
+        </div>
+        <div class="form-group bg-faded">
+          <p>You take on many tasks in life because you don't trust others to do them well</p>
+          <div class="form-check form-check-inline">
+            <label class="form-check-label">
+              <input type="radio" class="form-check-input" name="quest8" value="5">Agree
+            </label>
+            <label class="form-check-label">
+              <input type="radio" class="form-check-input" name="quest8" value="4">
+            </label>
+            <label class="form-check-label">
+              <input type="radio" class="form-check-input" name="quest8" value="3">Both
+            </label>
+            <label class="form-check-label">
+              <input type="radio" class="form-check-input" name="quest8" value="2">
+            </label>
+            <label class="form-check-label">
+              <input type="radio" class="form-check-input" name="quest8" value="1">Disagree
+            </label>
+          </div>
+        </div>
+        <div class="form-group bg-faded">
+          <p>You can focus on many tasks at the same time</p>
+          <div class="form-check form-check-inline">
+            <label class="form-check-label">
+              <input type="radio" class="form-check-input" name="quest9" value="5">Octopus
+            </label>
+            <label class="form-check-label">
+              <input type="radio" class="form-check-input" name="quest9" value="4">
+            </label>
+            <label class="form-check-label">
+              <input type="radio" class="form-check-input" name="quest9" value="3">Both
+            </label>
+            <label class="form-check-label">
+              <input type="radio" class="form-check-input" name="quest9" value="2">
+            </label>
+            <label class="form-check-label">
+              <input type="radio" class="form-check-input" name="quest9" value="1">Mono
+            </label>
+          </div>
+        </div>
+        <div class="form-group bg-faded">
+          <p>The police are here to help you</p>
+          <div class="form-check form-check-inline">
+            <label class="form-check-label">
+              <input type="radio" class="form-check-input" name="quest10" value="5">Loved
+            </label>
+            <label class="form-check-label">
+              <input type="radio" class="form-check-input" name="quest10" value="4">
+            </label>
+            <label class="form-check-label">
+              <input type="radio" class="form-check-input" name="quest10" value="3">Both
+            </label>
+            <label class="form-check-label">
+              <input type="radio" class="form-check-input" name="quest10" value="2">
+            </label>
+            <label class="form-check-label">
+              <input type="radio" class="form-check-input" name="quest10" value="1">Feared
+            </label>
+          </div>
+        </div>
+        <button type="submit" class="btn btn-success submit text-white" name="subButt">Submit</button>
+      </form>
+    </div>
+
     <script src="https://code.jquery.com/jquery-3.1.1.slim.min.js" integrity="sha384-A7FZj7v+d/sdmMqp/nOQwliLvUsJfDHW+k9Omg/a/EheAdgtzNs3hpfag6Ed950n" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js" integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb" crossorigin="anonymous"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js" integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn" crossorigin="anonymous"></script>
   </body>
 </html>
+
+<script type="text/javascript">
+  $(".submit").on("click",function (event) {
+    event.preventDefault();
+    var user = {
+      name: $("#userName").val().trim(),
+      type: "adventurer",
+      image: "";
+      scores: [$('input[name="quest1"]:checked').val(),$('input[name="quest2"]:checked').val(),$('input[name="quest3"]:checked').val(),$('input[name="quest4"]:checked').val(),$('input[name="quest5"]:checked').val(),$('input[name="quest6"]:checked').val(),$('input[name="quest7"]:checked').val(),$('input[name="quest8"]:checked').val(),$('input[name="quest9"]:checked').val(),$('input[name="quest10"]:checked').val()]
+    };
+    console.log(user);
+    $.post("/api/friends",user, function (data) {
+      console.log(data);
+    })
+
+  })
+
+</script>
