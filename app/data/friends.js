@@ -10,8 +10,8 @@ var friendData = [{
   scores:[2,3,3,2,1,2,1,4,3,2]
 },{
   name: "Sammy the otter",
-  type: "otter.jpeg",
-  image: "",
+  type: "Otter cleric",
+  image: "otter.jpeg",
   scores:[4,4,2,1,3,3,2,5,3,5]
 },{
   name: "Terrain Floward",

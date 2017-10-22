@@ -220,6 +220,7 @@
         <button type="submit" class="btn btn-success submit text-white" name="subButt">Submit</button>
       </form>
     </div>
+    //div containing a modal, having a spot to populate each detail of the friend
 
     <script src="https://code.jquery.com/jquery-3.1.1.slim.min.js" integrity="sha384-A7FZj7v+d/sdmMqp/nOQwliLvUsJfDHW+k9Omg/a/EheAdgtzNs3hpfag6Ed950n" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js" integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb" crossorigin="anonymous"></script>
@@ -236,9 +237,8 @@
       image: "";
       scores: [$('input[name="quest1"]:checked').val(),$('input[name="quest2"]:checked').val(),$('input[name="quest3"]:checked').val(),$('input[name="quest4"]:checked').val(),$('input[name="quest5"]:checked').val(),$('input[name="quest6"]:checked').val(),$('input[name="quest7"]:checked').val(),$('input[name="quest8"]:checked').val(),$('input[name="quest9"]:checked').val(),$('input[name="quest10"]:checked').val()]
     };
-    console.log(user);
     $.post("/api/friends",user, function (data) {
-      console.log(data);
+      //put the info i get from data (the lowest diff sum friend) into the modal
     })
 
   })
