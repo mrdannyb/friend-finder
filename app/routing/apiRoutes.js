@@ -10,7 +10,12 @@ module.exports = function(app) {
       res.json(friends);
     });
 
-    app.post("/api/friends", function(req,res) {
+    app.post("/survey", function(req,res) {
+      console.log(req);
+      console.log("----------");
+      console.log(res);
+      res.json(res);
+
       //function to compare the score sums, probably save in an array
       //find the lowest (either by a sorting algorithm or by getlowest method)
       //return the lowest (or one tied for lowest)
